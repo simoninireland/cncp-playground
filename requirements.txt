@@ -1,0 +1,12 @@
+ipython
+jupyter
+jupyterlab
+jupyter-dash
+networkx >= 2.4
+epydemic >= 1.2.1
+numpy
+mpmath
+matplotlib
+seaborn
+pandas
+
