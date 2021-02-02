@@ -9,4 +9,7 @@ mpmath
 matplotlib
 seaborn
 pandas
+plotly
+dash
+jupyter_dash
 

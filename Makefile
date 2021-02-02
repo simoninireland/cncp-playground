@@ -48,6 +48,12 @@ CONTENT = \
 	$(RAW_IMAGES) $(SVG_IMAGES) $(GENERATED_IMAGES) \
 	$(BIBLIOGRAPHY)
 
+# Jupyer lab extensions
+JUPYTERLAB_EXTENSIONS = \
+	jupyterlab-plotly@4.14.3 \
+	@jupyter-widgets/jupyterlab-manager \
+	plotlywidget@4.14.3
+
 
 # ----- Tools -----
 
@@ -104,6 +110,7 @@ env: $(VENV)
 $(VENV):
 	$(VIRTUALENV) $(VENV)
 	$(ACTIVATE) && $(PIP) install wheel && $(PIP) install -r requirements.txt
+	$(ACTIVATE) && $(JUPYTER) labextension install $(JUPYTERLAB_EXTENSIONS)
 
 
 # Clean up the build
