@@ -1,6 +1,6 @@
 # Makefile for "CNCP Playground"
 #
-# Copyright (C) 2020 Simon Dobson
+# Copyright (C) 2020-2021 Simon Dobson
 #
 # This file is part of cncp-playground, an interactive view of network science 
 #
