@@ -1,0 +1,14 @@
+# Python compiled files
+__pycache__/
+*.py[cod]
+
+# Backup files and lockfiles
+*~
+\#*#
+.#*
+
+# Python venv
+venv/
+venv3/
+.venv/
+

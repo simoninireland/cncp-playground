@@ -95,5 +95,9 @@ ENV/
 # Rope project settings
 .ropeproject
 
+# Backup files and lockfiles
+*~
+\#*#
+.#*
 
 
