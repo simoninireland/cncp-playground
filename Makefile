@@ -90,7 +90,7 @@ VENV = venv3
 REQUIREMENTS = requirements.txt
 
 # Constructed commands
-RUN_SERVER = PYTHONPATH=. $(JUPYTER) lab
+RUN_SERVER = PYTHONPATH=. $(JUPYTER) notebook
 
 
 # ----- Top-level targets -----
@@ -109,7 +109,7 @@ env: $(VENV)
 
 $(VENV):
 	$(VIRTUALENV) $(VENV)
-	$(ACTIVATE) && $(PIP) install wheel && $(PIP) install -r requirements.txt
+	$(ACTIVATE) && $(PIP) install -U pip wheel && $(PIP) install -r requirements.txt
 	$(ACTIVATE) && $(JUPYTER) labextension install $(JUPYTERLAB_EXTENSIONS)
 
 
